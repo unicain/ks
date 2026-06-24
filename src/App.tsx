@@ -18,38 +18,38 @@ export default function App() {
   </ul>
 </nav>
 
-      {/* HERO */}
-      <section className="hero" style={{ paddingTop: 0 }}>
-        <div className="hero-bg"></div>
-        <div className="hero-grid-wrapper">
-          <div className="hero-content">
-            <p className="hero-eyebrow">Business Strategist &nbsp;·&nbsp; São Paulo &amp; Global</p>
-            <h1>Estratégia que<br /><em>conecta mercados,</em><br />tecnologia e marcas.</h1>
-            <p className="hero-sub">
-              Mais de 20 anos construindo pontes entre negócios, culturas e resultados — 
-              da ONU em Viena ao golfe feminino no Brasil, da inteligência artificial 
-              ao posicionamento de marcas no Google Maps.
-            </p>
-            <div className="hero-tags">
-              <span className="tag">Comunicação Estratégica</span>
-              <span className="tag">Agentes de IA para Negócios</span>
-              <span className="tag">Google Maps &amp; Presença Digital</span>
-              <span className="tag">Branding Internacional</span>
-              <span className="tag">Relações Institucionais</span>
-              <span className="tag">4 Idiomas</span>
-            </div>
-          </div>
-          <div className="hero-image-container">
-            <div className="profile-image-frame">
-              <img 
-                src={fotoPerfil} 
-                alt="Karen Schneider" 
-                className="profile-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* HERO */}
+<section className="hero" style={{ paddingTop: 0 }}>
+  <div className="hero-bg"></div>
+  <div className="hero-grid-wrapper">
+    <div className="hero-content">
+      <p className="hero-eyebrow">Business Strategist &nbsp;·&nbsp; São Paulo &amp; Global</p>
+      <h1>Estratégia que<br /><em>conecta mercados,</em><br />tecnologia e marcas.</h1>
+      <p className="hero-sub">
+        Mais de 20 anos construindo pontes entre negócios, culturas e resultados — 
+        da ONU em Viena ao golfe feminino no Brasil, da inteligência artificial 
+        ao posicionamento de marcas no Google Maps.
+      </p>
+      <div className="hero-tags">
+        <span className="tag">Comunicação Estratégica</span>
+        <span className="tag">Agentes de IA para Negócios</span>
+        <span className="tag">Google Maps &amp; Presença Digital</span>
+        <span className="tag">Branding Internacional</span>
+        <span className="tag">Relações Institucionais</span>
+        <span className="tag">4 Idiomas</span>
+      </div>
+    </div>
+    <div className="hero-image-container">
+      <div className="profile-image-frame">
+        <img 
+          src={fotoPerfil} 
+          alt="Karen Schneider" 
+          className="profile-image"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* SOBRE */}
       <section id="sobre">
