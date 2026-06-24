@@ -3,51 +3,51 @@ import './App.css';
 export default function App() {
   return (
     <div className="app-container">
-     {/* NAV */}
-<nav>
-  <span className="nav-logo">Karen Schneider</span>
-  <ul className="nav-links"> {/* <-- Corrigido aqui para className */}
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#pilares">Atuação</a></li>
-    <li><a href="#ia">Agentes IA</a></li>
-    <li><a href="#maps">Maps & Presença</a></li>
-    <li><a href="#trajetoria">Trajetória</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
+      {/* NAV */}
+      <nav>
+        <span className="nav-logo">Karen Schneider</span>
+        <ul className="nav-links"> {/* CORRIGIDO: de class para className */}
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#pilares">Atuação</a></li>
+          <li><a href="#ia">Agentes IA</a></li>
+          <li><a href="#maps">Maps &amp; Presença</a></li>
+          <li><a href="#trajetoria">Trajetória</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
 
-    {/* HERO */}
-<section className="hero" style={{ paddingTop: 0 }}>
-  <div className="hero-bg"></div>
-  <div className="hero-grid-wrapper">
-    <div className="hero-content">
-      <p className="hero-eyebrow">Business Strategist &nbsp;·&nbsp; São Paulo &amp; Global</p>
-      <h1>Estratégia que<br /><em>conecta mercados,</em><br />tecnologia e marcas.</h1>
-      <p className="hero-sub">
-        Mais de 20 anos construindo pontes entre negócios, culturas e resultados — 
-        da ONU em Viena ao golfe feminino no Brasil, da inteligência artificial 
-        ao posicionamento de marcas no Google Maps.
-      </p>
-      <div className="hero-tags">
-        <span className="tag">Comunicação Estratégica</span>
-        <span className="tag">Agentes de IA para Negócios</span>
-        <span className="tag">Google Maps &amp; Presença Digital</span>
-        <span className="tag">Branding Internacional</span>
-        <span className="tag">Relações Institucionais</span>
-        <span className="tag">4 Idiomas</span>
-      </div>
-    </div>
-    <div className="hero-image-container">
-  <div className="profile-image-frame">
-    <img 
-      src="/foto_perfil_karen.jpeg" // <-- Alterado para ler diretamente da pasta public
-      alt="Karen Schneider" 
-      className="profile-image"
-    />
-  </div>
-</div>
-  </div>
-</section>
+      {/* HERO */}
+      <section className="hero" style={{ paddingTop: 0 }}>
+        <div className="hero-bg"></div>
+        <div className="hero-grid-wrapper">
+          <div className="hero-content">
+            <p className="hero-eyebrow">Business Strategist &nbsp;·&nbsp; São Paulo &amp; Global</p>
+            <h1>Estratégia que<br /><em>conecta mercados,</em><br />tecnologia e marcas.</h1>
+            <p className="hero-sub">
+              Mais de 20 anos construindo pontes entre negócios, culturas e resultados — 
+              da ONU em Viena ao golfe feminino no Brasil, da inteligência artificial 
+              ao posicionamento de marcas no Google Maps.
+            </p>
+            <div className="hero-tags">
+              <span className="tag">Comunicação Estratégica</span>
+              <span className="tag">Agentes de IA para Negócios</span>
+              <span className="tag">Google Maps &amp; Presença Digital</span>
+              <span className="tag">Branding Internacional</span>
+              <span className="tag">Relações Institucionais</span>
+              <span className="tag">4 Idiomas</span>
+            </div>
+          </div>
+          <div className="hero-image-container">
+            <div className="profile-image-frame">
+              <img 
+                src="/foto_perfil_karen.jpeg" // CORRIGIDO: usando a string direta para ler da pasta public
+                alt="Karen Schneider" 
+                className="profile-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* SOBRE */}
       <section id="sobre">
@@ -290,7 +290,7 @@ export default function App() {
       </section>
 
       {/* CONTATO */}
-      <div id="contato" className="contact-band">
+      <div id="contato" class="contact-band">
         <h2>Vamos conversar sobre<br /><em>o seu negócio?</em></h2>
         <div className="contact-info">
           <a href="https://wa.me/5511976869042" target="_blank" rel="noreferrer">📱 (11) 97686-9042 · WhatsApp</a>
