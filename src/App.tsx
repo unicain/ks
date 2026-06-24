@@ -5,18 +5,18 @@ import fotoPerfil from './assets/foto_perfil_karen.jpeg';
 export default function App() {
   return (
     <div className="app-container">
-      {/* NAV */}
-      <nav>
-        <span className="nav-logo">Karen Schneider</span>
-        <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#pilares">Atuação</a></li>
-          <li><a href="#ia">Agentes IA</a></li>
-          <li><a href="#maps">Maps & Presença</a></li>
-          <li><a href="#trajetoria">Trajetória</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+     {/* NAV */}
+<nav>
+  <span className="nav-logo">Karen Schneider</span>
+  <ul className="nav-links"> {/* <-- Corrigido aqui para className */}
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#pilares">Atuação</a></li>
+    <li><a href="#ia">Agentes IA</a></li>
+    <li><a href="#maps">Maps & Presença</a></li>
+    <li><a href="#trajetoria">Trajetória</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
 
       {/* HERO */}
       <section className="hero" style={{ paddingTop: 0 }}>
