@@ -1,5 +1,4 @@
 import './App.css';
-import fotoPerfil from './assets/foto_perfil_karen.jpeg';
 
 export default function App() {
   return (
@@ -39,14 +38,14 @@ export default function App() {
       </div>
     </div>
     <div className="hero-image-container">
-      <div className="profile-image-frame">
-        <img 
-          src={fotoPerfil} 
-          alt="Karen Schneider" 
-          className="profile-image"
-        />
-      </div>
-    </div>
+  <div className="profile-image-frame">
+    <img 
+      src="/foto_perfil_karen.jpeg" // <-- Alterado para ler diretamente da pasta public
+      alt="Karen Schneider" 
+      className="profile-image"
+    />
+  </div>
+</div>
   </div>
 </section>
 
