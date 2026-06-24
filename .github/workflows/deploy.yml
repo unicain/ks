@@ -3,7 +3,7 @@ name: Deploy do Portfolio
 on:
   push:
     branches:
-      - main # Ou master, caso use o nome antigo
+      - main # Altere para 'master' se a sua branch principal tiver esse nome
 
 permissions:
   contents: write
@@ -15,11 +15,10 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - name: Instalar Node.js ⚙️
-        uses: actions/configure-pages@v4
+      - name: Configurar Node.js ⚙️
         uses: actions/setup-node@v4
         with:
-          node-node-version: 20
+          node-version: 20
           cache: 'npm'
 
       - name: Instalar e Buildar 🚀
@@ -31,4 +30,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist # Pasta gerada pelo Vite
-          branch: gh-pages # Branch onde o GitHub Pages lerá os arquivos compilados
+          branch: gh-pages # Branch onde o GitHub Pages lerá os arquivos prontos
