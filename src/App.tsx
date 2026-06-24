@@ -40,10 +40,10 @@ export default function App() {
           <div className="hero-image-container">
             <div className="profile-image-frame">
               <img 
-                src="/foto_perfil_karen.jpeg" // CORRIGIDO: usando a string direta para ler da pasta public
-                alt="Karen Schneider" 
-                className="profile-image"
-              />
+  src="./foto_perfil_karen.jpeg" // <-- O ponto força a busca dentro da pasta /ks/
+  alt="Karen Schneider" 
+  className="profile-image"
+/>
             </div>
           </div>
         </div>
