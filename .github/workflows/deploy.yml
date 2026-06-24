@@ -3,7 +3,7 @@ name: Deploy do Portfolio
 on:
   push:
     branches:
-      - main # Altere para 'master' se a sua branch principal tiver esse nome
+      - main # Altere para 'master' se sua branch principal tiver esse nome
 
 permissions:
   contents: write
@@ -18,8 +18,8 @@ jobs:
       - name: Configurar Node.js ⚙️
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: 24 # 🔥 Atualizado para o Node 24 (evita o aviso de depreciação)
+          # 💡 Removemos a linha do cache temporariamente para evitar o erro de falta de lockfile
 
       - name: Instalar e Buildar 🚀
         run: |
